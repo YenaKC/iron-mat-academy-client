@@ -18,7 +18,7 @@ function ClassesPage() {
 
     return (
         <main>
-            <h1>Weekly Schedule</h1>;
+            <h1>Weekly Schedule</h1>
 
             {classes.map((classItem) => {
                 <ClassCard key={classItem.id} classItem={classItem} />

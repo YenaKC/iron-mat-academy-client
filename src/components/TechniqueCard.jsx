@@ -7,6 +7,8 @@ function TechniqueCard({ technique, onDelete }) {
             <p>{technique.category}</p>
             <p>{technique.level}</p>
 
+            <Link to={`/techniques/${technique.id}`}>Details</Link>
+
             <Link to={`/techniques/${technique.id}/edit`}>Edit</Link>
 
             <button onClick={() => onDelete(technique.id)}>

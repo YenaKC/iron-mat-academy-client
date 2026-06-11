@@ -9,8 +9,9 @@ import CoachesPage from "./pages/CoachesPage";
 import ClassesPage from "./pages/ClassesPage";
 import TechniquesPage from "./pages/TechniquesPage";
 import AddTechniquePage from "./pages/AddTechniquePage";
-import ContactPage from "./pages/ContactPage";
 import EditTechniquePage from "./pages/EditTechniquePage";
+import TechniqueDetailPage from "./pages/TechniqueDetailPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/techniques" element={<TechniquesPage />} />
         <Route path="/techniques/new" element={<AddTechniquePage />} />
         <Route path="/techniques/:techniqueId/edit" element={<EditTechniquePage />}/>
+        <Route path="/techniques/:techniqueId" element={<TechniqueDetailPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
 
