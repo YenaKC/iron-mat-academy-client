@@ -291,11 +291,13 @@ form {
 }
 
 .class-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  padding: 20px;
-  transition: 0.2s ease;
+  min-height: 180px;
+}
+
+.class-day {
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .class-card:hover {
@@ -305,7 +307,7 @@ form {
 
 .class-card h3 {
   color: var(--text-main);
-}
+} 
 
 
 
@@ -408,8 +410,8 @@ form {
 /* ===================== TABLET ====================== */
 /* =================================================== */
 /* SOLO CASO ESPECIAL PARA ALGUNAS SECCIONES */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .classes-grid {
     grid-template-columns: repeat(5, 1fr);
   }
-}
+} */
