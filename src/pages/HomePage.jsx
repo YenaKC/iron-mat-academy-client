@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom":
+import { Link } from "react-router-dom";
 
 function HomePage() {
     return (
         <main>
             <section>
                 <h1>DOMINATE THE MAT</h1>
-                <p>THE ULTIMATE NO-GI JIU.JITSU TRAINING ACADEMY</p>
+                <p>THE ULTIMATE NO-GI JIU-JITSU TRAINING ACADEMY</p>
                 <Link to="/classes">VIEW SCHEDULE</Link>
             </section>
 
