@@ -234,9 +234,35 @@ form {
     opacity: 0;
   }
 
+/* ================= TECHNIQUES ================== */
+
+.techniques-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.technique-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.technique-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 
 /* =================================================== */
-/* ==================== Desktop ====================== */
+/* ==================== DESKTOP ====================== */
 /* =================================================== */
 
 @media (min-width: 768px) {
@@ -305,6 +331,11 @@ form {
 
   /*  COACHES  */
   .coaches-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* TECHNIQUE */
+  .techniques-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 

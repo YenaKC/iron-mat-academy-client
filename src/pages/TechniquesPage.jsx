@@ -47,21 +47,24 @@ function TechniquesPage() {
             <h1>Techniques</h1>
 
             {/* Input for searchbar */}
-            <input 
+            <input
                 type="text"
                 placeholder="Search techniques..."
                 value={searchTerm}
                 onChange={(event) => setSearchTerm(event.target.value)}
             />
-            
+
             {/* To search organized and filtered data */}
-            {filteredTechniques.map((technique) => (
-                <TechniqueCard 
-                    key={technique.id} 
-                    technique={technique} 
-                    onDelete={handleDelete}
-                />
-            ))}
+            <section className="techniques-grid">
+
+                {filteredTechniques.map((technique) => (
+                    <TechniqueCard
+                        key={technique.id}
+                        technique={technique}
+                        onDelete={handleDelete}
+                    />
+                ))}
+            </section>
         </main>
     );
 }
