@@ -21,12 +21,12 @@ function ClassesPage() {
             <h1>Weekly Schedule</h1>
 
             <section className="classes-grid">
-                {classes.map((classItem) => {
+                {classes.map((classItem) => (
                     <ClassCard
                         key={classItem.id}
                         classItem={classItem}
                     />
-                })}
+                ))}
             </section>
         </main >
     );
