@@ -25,21 +25,30 @@ function TechniqueDetailPage() {
     return (
         <main>
             <h1>{technique.name}</h1>
-            <p>Category: {technique.category}</p>
-            <p>Position: {technique.position}</p>
-            <p>Level: {technique.level}</p>
-            <p>Description: {technique.description}</p>
 
-            {technique.youtubeUrl && (
-                <p>
-                    Video:{" "}
-                    <a href={technique.youtubeUrl} target="_blank">
-                        Watch technique
-                    </a>
-                </p>
-            )}
+            <section className="technique-detail">
+                <div className="technique-video">
+                    {technique.youtubeUrl ? (
+                        <a
+                            href={technique.youtubeUrl}
+                            target="_blank"
+                        >
+                            Watch Technique
+                        </a>
+                    ) : (
+                        <p>No video available.</p>
+                    )}
+                </div>
 
-            <Link to="/techniques">Back</Link>
+                <div className="technique-info">
+                    <p>Category: {technique.category}</p>
+                    <p>Position: {technique.position}</p>
+                    <p>Level: {technique.level}</p>
+                    <p>Description: {technique.description}</p>
+
+                    <Link to="/techniques">Back</Link>
+                </div>
+            </section>
         </main>
     );
 }

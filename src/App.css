@@ -260,6 +260,28 @@ form {
   gap: 8px;
 }
 
+/* ================ TECHNIQUE DETAIL ================= */
+
+.technique-detail {
+  display: grid;
+  gap: 24px;
+}
+
+.technique-video {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.technique-info {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+
 
 /* =================================================== */
 /* ==================== DESKTOP ====================== */
@@ -349,6 +371,12 @@ form {
   .card-actions button {
     padding: 8px 12px;
     font-size: 12px;
+  }
+
+  /* TECHNIQUE DETAIL */
+  .technique-detail {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
   }
 
 }
