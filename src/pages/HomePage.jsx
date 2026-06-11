@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 function HomePage() {
     return (
         <main>
-            <section>
+            <section className="hero">
                 <h1>DOMINATE THE MAT</h1>
                 <p>THE ULTIMATE NO-GI JIU-JITSU TRAINING ACADEMY</p>
                 <Link to="/classes">VIEW SCHEDULE</Link>
             </section>
 
-            <section>
+            <section className="card-grid">
                 <h2>THIS WEEK'S TECHNIQUES</h2>
 
                 <div>
@@ -30,7 +30,7 @@ function HomePage() {
                 <Link to="/techniques">Explore Techniques</Link>
             </section>
 
-            <section>
+            <section className="card-grid">
                 <h2>MEET OUR COACHES</h2>
 
                 <div>

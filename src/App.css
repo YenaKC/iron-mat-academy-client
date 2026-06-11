@@ -3,7 +3,7 @@
 
 /* ===================== GLOBAL ====================== */
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -35,7 +35,9 @@ section {
   margin-bottom: 56px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
   text-transform: uppercase;
   line-height: 1.1;
@@ -124,8 +126,8 @@ footer {
   border-top: 1px solid var(--card-border);
 }
 
-main > section > div,
-main > div {
+main>section>div,
+main>div {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 8px;
@@ -201,22 +203,33 @@ form {
     padding: 64px 24px 80px;
   }
 
-  main > section {
+  main>section {
     text-align: left;
   }
 
-  main > section:nth-of-type(2),
-  main > section:nth-of-type(3) {
+  main>section:nth-of-type(2),
+  main>section:nth-of-type(3) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  /* En Inicio, cambia la forma 3 líneas para This Week's Techniques y Meet Our Coaches */
-  main > section:nth-of-type(2) h2,
-  main > section:nth-of-type(2) a,
-  main > section:nth-of-type(3) h2,
-  main > section:nth-of-type(3) a {
+  /* En Inicio de desktop, las tarjetas se cambian la forma a 1 líneas para This Week's Techniques y Meet Our Coaches */
+  /* main>section:nth-of-type(2) h2,
+  main>section:nth-of-type(2) a,
+  main>section:nth-of-type(3) h2,
+  main>section:nth-of-type(3) a {
+    grid-column: 1 / -1;
+  } */
+
+  /* Home - card section  */
+  .card-grid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .card-grid h2,
+  .card-grid a {
     grid-column: 1 / -1;
   }
 
@@ -234,6 +247,11 @@ form {
     display: flex;
     flex-direction: row;
     margin-top: 0;
+  }
+
+  /* HOME: CARD SECTION */
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 }
