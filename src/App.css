@@ -336,7 +336,9 @@ form {
 
   /* TECHNIQUE */
   .techniques-grid {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .technique-card h3 {
