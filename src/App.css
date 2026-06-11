@@ -142,7 +142,7 @@ main a {
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  padding: 10pz 16px;
+  padding: 10px 16px;
   margin: 8px 6px 8px 0;
   font-size: 14px;
   font-weight: 700;
@@ -205,6 +205,21 @@ form {
     text-align: left;
   }
 
+  main > section:nth-of-type(2),
+  main > section:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* En Inicio, cambia la forma 3 líneas para This Week's Techniques y Meet Our Coaches */
+  main > section:nth-of-type(2) h2,
+  main > section:nth-of-type(2) a,
+  main > section:nth-of-type(3) h2,
+  main > section:nth-of-type(3) a {
+    grid-column: 1 / -1;
+  }
+
   .menu-button {
     display: none;
   }
@@ -220,4 +235,5 @@ form {
     flex-direction: row;
     margin-top: 0;
   }
+
 }

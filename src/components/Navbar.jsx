@@ -17,6 +17,7 @@ function Navbar() {
                 </button>
             </div>
 
+            {/* cuando clickquea hamburguesa aprece menu */}
             <div className={isOpen ? "nav-links open" : "nav-links"}>
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
