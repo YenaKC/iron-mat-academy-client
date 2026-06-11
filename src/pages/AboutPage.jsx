@@ -24,7 +24,7 @@ function AboutPage() {
                     <p>Climate Control</p>
                     <p>Full Locker Room</p>
                     <p>Shower Facilities</p>
-                    <p>Gear Storave</p>
+                    <p>Gear Storage</p>
                     <p>Waiting Area</p>
                 </div>
             </section>
