@@ -19,15 +19,16 @@ function CoachesPage() {
 
     return (
         <main>
-            <h1>Coaches Page</h1>
+            <h1>Coaches</h1>
 
-            {coaches.map((coach) => (
-                <div key={coach.id}>
-                    <h2>{coach.name}</h2>
-                    <p>{coach.belt}</p>
-                    <p>{coach.specialty}</p>
-                </div>
-            ))}
+            <section className="coaches-grid">
+                {coaches.map((coach) => (
+                    <CoachCard 
+                        key={coach.id}
+                        coach={coach}
+                    />
+                ))}
+            </section>
         </main>
     );
 }
