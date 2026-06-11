@@ -339,6 +339,10 @@ form {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .technique-card h3 {
+    min-height: 60px;
+  }
+
   .card-actions a,
   .card-actions button {
     padding: 8px 12px;
