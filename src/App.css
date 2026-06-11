@@ -310,13 +310,6 @@ form {
     text-align: left;
   }
 
-  main>section:nth-of-type(2),
-  main>section:nth-of-type(3) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
   /* Home - card section  */
 
   /* En Inicio de desktop, las tarjetas se cambian la forma a 1 líneas para This Week's Techniques y Meet Our Coaches */
