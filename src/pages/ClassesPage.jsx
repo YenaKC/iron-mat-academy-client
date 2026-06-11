@@ -7,7 +7,7 @@ function ClassesPage() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5005/classes")
+            .get("https://iron-mat-academy-server.onrender.com/classes")
             .then((response) => {
                 setClasses(response.data);
             })

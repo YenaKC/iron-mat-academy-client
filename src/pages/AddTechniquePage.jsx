@@ -26,7 +26,7 @@ function AddTechniquePage() {
         };
 
         axios
-            .post("http://localhost:5005/techniques", newTechnique)
+            .post("https://iron-mat-academy-server.onrender.com/techniques", newTechnique)
             .then(() => {
                 navigate("/techniques");
             })

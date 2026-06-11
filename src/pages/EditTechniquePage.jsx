@@ -16,7 +16,7 @@ function EditTechniquePage() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5005/techniques/${techniqueId}`)
+            .get(`https://iron-mat-academy-server.onrender.com/techniques/${techniqueId}`)
             .then((response) => {
                 setName(response.data.name);
                 setCategory(response.data.category);
@@ -43,7 +43,7 @@ function EditTechniquePage() {
         };
 
         axios
-            .put(`http://localhost:5005/techniques/${techniqueId}`, updatedTechnique)
+            .put(`https://iron-mat-academy-server.onrender.com/techniques/${techniqueId}`, updatedTechnique)
             .then(() => {
                 navigate("/techniques");
             })

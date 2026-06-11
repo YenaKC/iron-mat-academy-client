@@ -13,7 +13,7 @@ function TechniquesPage() {
     // Delete
     const handleDelete = (id) => {
         axios
-            .delete(`http://localhost:5005/techniques/${id}`)
+            .delete(`https://iron-mat-academy-server.onrender.com/techniques/${id}`)
             .then(() => {
                 setTechniques(
                     techniques.filter(
@@ -28,7 +28,7 @@ function TechniquesPage() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5005/techniques")
+            .get("https://iron-mat-academy-server.onrender.com/techniques")
             .then((response) => {
                 setTechniques(response.data);
             })

@@ -8,7 +8,7 @@ function CoachesPage() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5005/coaches")
+            .get("https://iron-mat-academy-server.onrender.com/coaches")
             .then((response) => {
                 setCoaches(response.data);
             })
