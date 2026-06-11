@@ -22,12 +22,10 @@ function ClassesPage() {
 
             <section className="classes-grid">
                 {classes.map((classItem) => {
-                    return (
-                        <ClassCard
+                    <ClassCard
                         key={classItem.id}
                         classItem={classItem}
-                        />
-                    )
+                    />
                 })}
             </section>
         </main >
