@@ -339,4 +339,10 @@ form {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .card-actions a,
+  .card-actions button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
 }
