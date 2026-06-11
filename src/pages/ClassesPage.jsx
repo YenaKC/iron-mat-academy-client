@@ -21,7 +21,7 @@ function ClassesPage() {
             <h1>Weekly Schedule</h1>
 
             {classes.map((classItem) => {
-                <ClassCard key={classItem.id} classItem={classItem} />
+                return <ClassCard key={classItem.id} classItem={classItem} />;
             })}
         </main >
     );
