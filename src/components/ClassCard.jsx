@@ -1,6 +1,6 @@
 function ClassCard({ classItem }) {
     return(
-        <div>
+        <div className="class-card">
             <h2>{classItem.title}</h2>
             <p>{classItem.day}</p>
             <p>{classItem.time}</p>

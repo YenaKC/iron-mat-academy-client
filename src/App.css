@@ -214,7 +214,8 @@ form {
 .coach-image-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; /* Maintain ratio of parallel and vertical*/
+  aspect-ratio: 1 / 1;
+  /* Maintain ratio of parallel and vertical*/
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 8px;
@@ -222,17 +223,18 @@ form {
 }
 
 .coach-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    inset: 0; /* to fill entire image */
-    transition: opacity 0.3s ease;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  /* to fill entire image */
+  transition: opacity 0.3s ease;
+}
 
-  .coach-photo {
-    opacity: 0;
-  }
+.coach-photo {
+  opacity: 0;
+}
 
 /* ================= TECHNIQUES ================== */
 
@@ -279,6 +281,30 @@ form {
   border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 20px;
+}
+
+/* ================== CLASSES =================== */
+
+.classes-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.class-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+  transition: 0.2s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.class-card h3 {
+  color: var(--text-main);
 }
 
 
@@ -372,4 +398,18 @@ form {
     align-items: start;
   }
 
+  /* CLASSES */
+  .classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =================================================== */
+/* ===================== TABLET ====================== */
+/* =================================================== */
+/* SOLO CASO ESPECIAL PARA ALGUNAS SECCIONES */
+@media (min-width: 1200px) {
+  .classes-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

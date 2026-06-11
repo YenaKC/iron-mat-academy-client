@@ -20,9 +20,14 @@ function ClassesPage() {
         <main>
             <h1>Weekly Schedule</h1>
 
-            {classes.map((classItem) => {
-                return <ClassCard key={classItem.id} classItem={classItem} />;
-            })}
+            <section className="classes-grid">
+                {classes.map((classItem) => {
+                    <ClassCard
+                        key={classItem.id}
+                        classItem={classItem}
+                    />;
+                })}
+            </section>
         </main >
     );
 }
