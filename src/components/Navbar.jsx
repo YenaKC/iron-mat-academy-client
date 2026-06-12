@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,7 +8,10 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-header">
-                <h2>Iron Mat Academy</h2>
+                {/* The logo redirects the user back to the homepage, following common UX conventions. */}
+                <Link to="/" className="navbar-logo">
+                    <img src={logo} alt="Iron Mat Academy" />
+                </Link>
 
                 <button
                     className="menu-button"

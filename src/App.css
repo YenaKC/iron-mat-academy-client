@@ -95,6 +95,13 @@ nav {
   font-size: 22px;
 }
 
+/* NAVBAR LOCO */
+.navbar-loco img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
 .menu-button {
   background-color: transparent;
   border: 1px solid var(--card-border);
