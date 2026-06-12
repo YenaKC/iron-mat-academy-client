@@ -12,6 +12,7 @@ import AddTechniquePage from "./pages/AddTechniquePage";
 import EditTechniquePage from "./pages/EditTechniquePage";
 import TechniqueDetailPage from "./pages/TechniqueDetailPage";
 import ContactPage from "./pages/ContactPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/techniques/:techniqueId/edit" element={<EditTechniquePage />}/>
         <Route path="/techniques/:techniqueId" element={<TechniqueDetailPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
       <Footer />

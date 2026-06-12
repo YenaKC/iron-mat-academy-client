@@ -443,6 +443,14 @@ form {
   max-width: none;
 }
 
+/* ================== 404 =================== */
+.not-found {
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 80px;
+}
 
 
 
