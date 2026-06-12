@@ -188,12 +188,24 @@ form {
   margin: 0 auto;
 }
 
-/* ================= COACHES ================== */
+/* ================= ABOUT ================== */
 
-.about-mission,
-.about-facilities {
+.about.hero {
   display: grid;
-  gap: 16px;
+  gap: 24px;
+}
+
+.about-image-placeholder {
+  min-height: 220px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .facility-list {
@@ -205,7 +217,8 @@ form {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 8px;
-  padding: 20px;
+  padding: 18px;
+  color: var(--text-muted);
 }
 
 
@@ -434,10 +447,11 @@ form {
   }
 
   /*  ABOUT  */
-  .about-mission {
+  .about-hero {
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
-
+  
   .facility-list {
     grid-template-columns: repeat(3, 1fr);
   }

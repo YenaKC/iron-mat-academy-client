@@ -6,28 +6,35 @@ function AboutPage() {
                 <p>Forging character and technique through discipline.</p>
             </section>
 
-            <section className="about-mission">
+            <section className="about-hero">
+                <div className="about-image-placeholder">
+                    TRAINING SPACE IMAGE
+                </div>
+
                 <div>
-                    <h2>OUR MISSION</h2>
+                    <h2>MISSION STATEMENT</h2>
                     <p>
-                        At Iron Mat Academy, we believe that Jiu-Jitsu is more than a sport. It is a way to build discipline, confidence, and resilience through consistent training.
+                        At Iron Mat Academy, we believe that Jiu-Jitsu is more than just a sport.
+                        Our mission is to forge resilient individuals through disciplined training,
+                        technical growth, and a respectful community.
                     </p>
                     <p>
-                        Our mission is to create a respectful training environment where students can improve their technique, challenge themselves, and grow on and off the mat.
+                        We focus on No-Gi grappling, functional movement, and consistent progress
+                        for students of all levels.
                     </p>
                 </div>
             </section>
 
-            <section className="about-facilities">
+            <section>
                 <h2>OUR FACILITIES</h2>
 
                 <div className="facility-list">
-                    <div className="facility-item">Premium Mats</div>
-                    <div className="facility-item">Climate Control</div>
-                    <div className="facility-item">Full Locker Room</div>
-                    <div className="facility-item">Shower Facilities</div>
-                    <div className="facility-item">Gear Storae</div>
-                    <div className="facility-item">Waiting Area</div>
+                    <div className="facility-item">🥋 Premium Mats</div>
+                    <div className="facility-item">❄️ Climate Control</div>
+                    <div className="facility-item">🔒 Full Locker Room</div>
+                    <div className="facility-item">🚿 Shower Facilities</div>
+                    <div className="facility-item">🎒 Gear Storae</div>
+                    <div className="facility-item">🪑 Waiting Area</div>
                 </div>
             </section>
         </main>
