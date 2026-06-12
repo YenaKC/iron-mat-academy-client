@@ -51,7 +51,7 @@ function CoachesPage() {
         },
         "Coach Rafael": {
             photoImage: rafaelPhoto,
-            drawingImage: rafaelrawing,
+            drawingImage: rafaelDrawing,
         },
         "Coach Raul": {
             photoImage: raulPhoto,
