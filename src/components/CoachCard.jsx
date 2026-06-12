@@ -8,8 +8,9 @@ function CoachCard({ coach }) {
                     alt={`${coach.name} drawing`}
                 />
 
+                {/* Para que no se ve cortado la foto de Raul */}
                 <img
-                    className="coach-image coach-photo"
+                    className={`coach-image coach-photo ${coach.name === "Coach Raul" ? "raul-photo" : ""}`}
                     src={coach.photoImage}
                     alt={`${coach.name} photo`}
                 />

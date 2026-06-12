@@ -451,6 +451,11 @@ form {
   opacity: 0;
 }
 
+/* Para que no suba mucho la foto */
+.raul-photo {
+  object-position: center top;
+}
+
 /* ================= TECHNIQUES ================== */
 
 .techniques-grid {
