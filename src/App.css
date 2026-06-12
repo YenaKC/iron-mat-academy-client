@@ -187,6 +187,21 @@ footer {
   text-align: center;
 }
 
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
 
 /* =================== BUTTON ======================== */
 

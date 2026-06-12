@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom"
 import tiktokIcon from "../assets/tiktok.png";
 import instagramIcon from "../assets/instagram.png";
 import xIcon from "../assets/x.png";
 import facebookIcon from "../assets/facebook.png";
-import logo from "../assets/logo.png"
 
 function Footer() {
     return (
@@ -14,21 +14,21 @@ function Footer() {
                     <p>Master your craft, dominate the mat</p>
 
                     <div className="footer-socials">
-                        <img src={tiktokIcon} alt="TikTok" />
-                        <img src={instagramIcon} alt="Instagram" />
-                        <img src={xIcon} alt="X" />
-                        <img src={facebookIcon} alt="Facebook" />
+                        <Link to="/"><img src={tiktokIcon} alt="TikTok" /></Link>
+                        <Link to="/"><img src={instagramIcon} alt="Instagram" /></Link>
+                        <Link to="/"><img src={xIcon} alt="X" /></Link>
+                        <Link to="/"><img src={facebookIcon} alt="Facebook" /></Link>
                     </div>
                 </div> 
 
                 <div className="footer-links">
                     <h4>Explore</h4>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Coaches</p>
-                    <p>Classes</p>
-                    <p>Techniques</p>
-                    <p>Contact</p>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/coaches">Coaches</Link>
+                    <Link to="/classes">Classes</Link>
+                    <Link to="/techniques">Techniques</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
 
                 <div className="footer-contact">
