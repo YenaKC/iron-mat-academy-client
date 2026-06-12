@@ -149,16 +149,16 @@ footer {
 }
 
 .footer-content {
-  max-width: 900px;
-  margin: 0 auto;
+  /* max-width: 900px;
+  margin: 0 auto; */
   display: grid;
   gap: 32px;
-  align-items: start;
+  /* align-items: start; */
 }
 
 .footer-brand,
 .footer-links,
-.footer-contact {
+.footer-content {
   text-align: left;
 }
 
@@ -180,8 +180,8 @@ footer {
 }
 
 .footer-bottom {
-  max-width: 900px;
-  margin-top: 32px auto 0;
+  /* max-width: 900px; */
+  margin-top: 32px;
   padding-top: 20px;
   border-top: 1px solid var(--card-border);
   text-align: center;
@@ -568,7 +568,7 @@ form {
 }
 
 .day-filter button.active-day {
-  background-color: var(--acdent);
+  background-color: var(--accent);
   color: #ffffff;
 }
 
