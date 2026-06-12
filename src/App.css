@@ -332,13 +332,21 @@ form {
   overflow-wrap: break-word;
 }
 
-.contact-info p {
+.contact-info h2,
+.contact-form h2 {
   font-size: 22px;
+}
+
+.contact-info p {
+  word-break: normal;
+  overflow-wrap: break-word;
+  font-size: 14px;
 }
 
 .contact-form form {
   max-width: none;
 }
+
 
 
 
