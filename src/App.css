@@ -147,6 +147,7 @@ footer {
   margin: 0 auto;
   display: grid;
   gap: 32px;
+  align-items: start;
 }
 
 .footer-brand,
@@ -507,6 +508,12 @@ form {
   .footer-content {
     grid-template-columns: 2fr 1fr 1.5fr;
     align-items: start;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact {
+    align-self: flex-start;
   }
 
   /* HOME: CARD SECTION */
