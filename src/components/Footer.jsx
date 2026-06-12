@@ -10,12 +10,7 @@ function Footer() {
             <div className="footer-content">
 
                 <div className="footer-brand">
-                    
-                    <img 
-                        src={logo}
-                        alt="Iron Mat Academy"
-                        className="footer-logo"
-                    />
+                    <h3>IRON MAT ACADEMY</h3>
                     <p>Master your craft, dominate the mat</p>
 
                     <div className="footer-socials">
@@ -24,7 +19,7 @@ function Footer() {
                         <img src={xIcon} alt="X" />
                         <img src={facebookIcon} alt="Facebook" />
                     </div>
-                </div>
+                </div> 
 
                 <div className="footer-links">
                     <h4>Explore</h4>
