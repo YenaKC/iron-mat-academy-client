@@ -179,6 +179,15 @@ footer {
   height: 24px;
 }
 
+.footer-socials a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  color: var(--accent);
+}
+
 .footer-bottom {
   max-width: 900px;
   margin-top: 32px auto 0;
