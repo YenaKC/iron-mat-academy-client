@@ -188,6 +188,35 @@ form {
   margin: 0 auto;
 }
 
+.footer-content {
+  display: grid;
+  gap: 32px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-content {
+  text-align: left;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  margin-top: 32px;
+  text-align: center;
+  border-top: 1px solid var(--card-border);
+  padding-top: 24px;
+}
+
 /* ================= ABOUT ================== */
 
 .about.hero {
@@ -441,6 +470,11 @@ form {
     margin-top: 0;
   }
 
+  /* FOOTER */
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
   /* HOME: CARD SECTION */
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -451,7 +485,7 @@ form {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
-  
+
   .facility-list {
     grid-template-columns: repeat(3, 1fr);
   }
