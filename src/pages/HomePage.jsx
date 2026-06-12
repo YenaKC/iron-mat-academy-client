@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import heroImage from "../assets/home-hero.png";
 
 function HomePage() {
     return (
         <main>
-            <section className="hero">
+            <section
+                className="hero"
+            >
                 <h1>DOMINATE THE MAT</h1>
                 <p>THE ULTIMATE NO-GI JIU-JITSU TRAINING ACADEMY</p>
                 <Link to="/classes">VIEW SCHEDULE</Link>

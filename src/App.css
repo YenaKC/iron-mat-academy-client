@@ -178,16 +178,6 @@ footer {
   width: 24px;
   height: 24px;
 }
-
-.footer-socials a {
-  color: var(--text-muted);
-  text-decoration: none;
-}
-
-.footer-socials a:hover {
-  color: var(--accent);
-}
-
 .footer-bottom {
   max-width: 900px;
   margin-top: 32px auto 0;
@@ -285,6 +275,39 @@ form {
   text-align: center;
   border-top: 1px solid var(--card-border);
   padding-top: 24px;
+}
+
+/* ================= Home ================== */
+.hero {
+  background-image: url("./assets/home-hero.png");
+
+  position: relative;
+  
+  min-height: 500px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+/* darken overlay for hero */
+.hero::before {
+  content: "";
+  
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero.content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 600px;
 }
 
 /* ================= ABOUT ================== */
