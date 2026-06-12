@@ -124,16 +124,6 @@ nav {
   color: var(--accent);
 }
 
-/* ==================== FOOTER ===================== */
-
-footer {
-  background-color: var(--bg-footer);
-  color: var(--text-muted);
-  text-align: center;
-  padding: 32px 20px;
-  border-top: 1px solid var(--card-border);
-}
-
 main>section>div,
 main>div {
   background-color: var(--card-bg);
@@ -142,6 +132,48 @@ main>div {
   padding: 20px;
   margin-bottom: 16px;
 }
+
+/* ==================== FOOTER ===================== */
+
+footer {
+  background-color: var(--bg-footer);
+  color: var(--text-muted);
+  padding: 48px 20px 32px;
+  border-top: 1px solid var(--card-border);
+}
+
+.footer-contact {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+  text-align: left;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.footer-socials img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-bottom {
+  max-width: 900px;
+  margin: 32px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+}
+
 
 /* =================== BUTTON ======================== */
 
@@ -473,7 +505,8 @@ form {
 
   /* FOOTER */
   .footer-content {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    align-items: start;
   }
 
   /* HOME: CARD SECTION */
