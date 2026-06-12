@@ -318,6 +318,10 @@ form {
   padding: 24px;
 }
 
+.contact-info p {
+  word-break: break-word;
+}
+
 .contact-form {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -325,6 +329,21 @@ form {
   padding: 24px;
 }
 
+.contact-layout {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-info,
+.contact-form {
+  width: 100;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.contact-form form {
+  max-width: none;
+}
 
 
 /* =================================================== */
