@@ -10,7 +10,12 @@ function Footer() {
             <div className="footer-content">
 
                 <div className="footer-brand">
-                    <h3>IRON MAT ACADEMY</h3>
+                    
+                    <img 
+                        src={logo}
+                        alt="Iron Mat Academy"
+                        className="footer-logo"
+                    />
                     <p>Master your craft, dominate the mat</p>
 
                     <div className="footer-socials">
