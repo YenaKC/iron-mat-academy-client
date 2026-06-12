@@ -512,12 +512,20 @@ form {
   padding: 20px;
 }
 
+.technique-video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  border-radius: 8px;
+}
+
 .technique-info {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 8px;
   padding: 20px;
 }
+
 
 /* ================== CLASSES =================== */
 

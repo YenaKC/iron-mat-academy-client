@@ -29,18 +29,18 @@ function TechniqueDetailPage() {
             <section className="technique-detail">
                 <div className="technique-video">
                     {technique.youtubeUrl ? (
-                        <a
-                            href={technique.youtubeUrl}
-                            target="_blank"
-                        >
-                            Watch Technique
-                        </a>
+                        <iframe
+                            src={technique.youtubeUrl.replace("youtu.be/", "www.youtube.com/embed/").split("?")[0]}
+                            title={technique.name}
+                            allowFullScreen
+                        ></iframe>
                     ) : (
                         <p>No video available.</p>
                     )}
                 </div>
 
                 <div className="technique-info">
+
                     <p>Category: {technique.category}</p>
                     <p>Position: {technique.position}</p>
                     <p>Level: {technique.level}</p>
