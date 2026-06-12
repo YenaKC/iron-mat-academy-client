@@ -33,7 +33,7 @@ function AboutPage() {
                     <div className="facility-item">❄️ Climate Control</div>
                     <div className="facility-item">🔒 Full Locker Room</div>
                     <div className="facility-item">🚿 Shower Facilities</div>
-                    <div className="facility-item">🎒 Gear Storae</div>
+                    <div className="facility-item">🎒 Gear Store</div>
                     <div className="facility-item">🪑 Waiting Area</div>
                 </div>
             </section>

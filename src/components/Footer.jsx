@@ -1,3 +1,9 @@
+import tiktokIcon from "../assets/tiktok.png";
+import instagramIcon from "../assets/instagram.png";
+import xIcon from "../assets/x.png";
+import facebookIcon from "../assets/facebook.png";
+import logo from "../assets/logo.png"
+
 function Footer() {
     return (
         <footer>
@@ -8,10 +14,10 @@ function Footer() {
                     <p>Master your craft, dominate the mat</p>
 
                     <div className="footer-socials">
-                        <img src="/tiktok.png" alt="TikTok" />
-                        <img src="/instagram.png" alt="Instagram" />
-                        <img src="/x.png" alt="X" />
-                        <img src="/facebook.png" alt="Facebook" />
+                        <img src={tiktokIcon} alt="TikTok" />
+                        <img src={instagramIcon} alt="Instagram" />
+                        <img src={xIcon} alt="X" />
+                        <img src={facebookIcon} alt="Facebook" />
                     </div>
                 </div>
 
