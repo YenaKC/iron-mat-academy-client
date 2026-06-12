@@ -4,12 +4,12 @@ import heroImage from "../assets/home-hero.png";
 function HomePage() {
     return (
         <main>
-            <section
-                className="hero"
-            >
-                <h1>DOMINATE THE MAT</h1>
-                <p>THE ULTIMATE NO-GI JIU-JITSU TRAINING ACADEMY</p>
-                <Link to="/classes">VIEW SCHEDULE</Link>
+            <section className="hero">
+                <div className="hero-content">
+                    <h1>DOMINATE THE MAT</h1>
+                    <p>THE ULTIMATE NO-GI JIU-JITSU TRAINING ACADEMY</p>
+                    <Link to="/classes">VIEW SCHEDULE</Link>
+                </div>
             </section>
 
             <section className="card-grid">
@@ -30,7 +30,7 @@ function HomePage() {
                     <p>Classic choke attack from guard position.</p>
                 </div>
 
-                <Link to="/techniques">Explore Techniques</Link>
+                <Link className="home-button" to="/techniques">Explore Techniques</Link>
             </section>
 
             <section className="card-grid">
@@ -48,7 +48,7 @@ function HomePage() {
                     <p>Guard Retention Specialist</p>
                 </div>
 
-                <Link to="/coaches">View Coaches</Link>
+                <Link className="home-button" to="/coaches">View Coaches</Link>
             </section>
         </main>
     );

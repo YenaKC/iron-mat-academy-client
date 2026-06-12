@@ -291,6 +291,17 @@ form {
 
   display: flex;
   align-items: center;
+  padding: 40px;
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+  display: block;
 }
 
 /* darken overlay for hero */
@@ -308,6 +319,13 @@ form {
   z-index: 2;
 
   max-width: 600px;
+}
+
+/* HOME BUTTONS */
+.home-button {
+  width: fit-content;
+  min-width: 180px;
+  text-align: center;
 }
 
 /* ================= ABOUT ================== */
@@ -579,6 +597,11 @@ form {
   /* HOME: CARD SECTION */
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-button {
+    width: fit-content;
+    min-width: auto;
   }
 
   /*  ABOUT  */
