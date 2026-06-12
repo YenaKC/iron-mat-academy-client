@@ -24,7 +24,7 @@ function CoachesPage() {
     const [coaches, setCoaches] = useState([]);
 
     // coach image mapping
-    const coachImage = {
+    const coachImages = {
         "Coach Alex": {
             photoImage: alexPhoto,
             drawingImage: alexDrawing,
