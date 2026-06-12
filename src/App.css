@@ -529,6 +529,25 @@ form {
   color: var(--text-main);
 }
 
+/* filter day */
+.day-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.day-filter button {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.day-filter button.active-day {
+  background-color: var(--acdent);
+  color: #ffffff;
+}
+
 /* ================== CONTACT =================== */
 
 .contact-layout {
