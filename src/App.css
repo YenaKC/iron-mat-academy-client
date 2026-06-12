@@ -134,18 +134,24 @@ main>div {
 }
 
 /* ==================== FOOTER ===================== */
+footer {
+  background-color: var(--bg-footer);
+  color: var(--text-muted);
+  padding: 48px 20px 32px;
+  border-top: 1px solid var(--card-border);
+}
 
 .footer-content {
   max-width: 900px;
-  /* margin: 0 auto;
-  display: grid; */
+  margin: 0 auto;
+  display: grid;
   gap: 32px;
-  /* align-items: start; */
+  align-items: start;
 }
 
 .footer-brand,
 .footer-links,
-.footer-content {
+.footer-contact {
   text-align: left;
 }
 
@@ -156,12 +162,13 @@ main>div {
 }
 
 .footer-socials img {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-bottom {
-  margin-top: 32px;
+  max-width: 900px;
+  margin-top: 32px auto 0;
   padding-top: 20px;
   border-top: 1px solid var(--card-border);
   text-align: center;
@@ -498,19 +505,7 @@ form {
 
   /* FOOTER */
   .footer-content {
-    max-width: 900px;
     grid-template-columns: 2fr 1fr 1.5fr;
-    align-items: start;
-  }
-
-  .footer-brand,
-  .footer-links,
-  .footer-contact {
-    align-self: start;
-  }
-
-  .footer-bottom {
-    max-width: 900px;
   }
 
   /* HOME: CARD SECTION */
