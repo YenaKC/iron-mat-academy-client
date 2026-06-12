@@ -190,6 +190,27 @@ form {
 
 /* ================= COACHES ================== */
 
+.about-mission,
+.about-facilities {
+  display: grid;
+  gap: 16px;
+}
+
+.facility-list {
+  display: grid;
+  gap: 16px;
+}
+
+.facility-item {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+
+/* ================= COACHES ================== */
+
 .coaches-grid {
   display: grid;
   gap: 16px;
@@ -312,7 +333,7 @@ form {
 
 .class-card h3 {
   color: var(--text-main);
-} 
+}
 
 /* ================== CONTACT =================== */
 
@@ -409,6 +430,15 @@ form {
 
   /* HOME: CARD SECTION */
   .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*  ABOUT  */
+  .about-mission {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .facility-list {
     grid-template-columns: repeat(3, 1fr);
   }
 

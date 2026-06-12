@@ -6,26 +6,28 @@ function AboutPage() {
                 <p>Forging character and technique through discipline.</p>
             </section>
 
-            <section>
-                <h2>OUR MISSION</h2>
-                <p>
-                    At Iron Mat Academy, we believe that Jiu-Jitsu is more than a sport. It is a way to build discipline, confidence, and resilience through consistent training.
-                </p>
-                <p>
-                    Our mission is to create a respectful training environment where students can improve their technique, challenge themselves, and grow on and off the mat.
-                </p>
+            <section className="about-mission">
+                <div>
+                    <h2>OUR MISSION</h2>
+                    <p>
+                        At Iron Mat Academy, we believe that Jiu-Jitsu is more than a sport. It is a way to build discipline, confidence, and resilience through consistent training.
+                    </p>
+                    <p>
+                        Our mission is to create a respectful training environment where students can improve their technique, challenge themselves, and grow on and off the mat.
+                    </p>
+                </div>
             </section>
 
-            <section>
+            <section className="about-facilities">
                 <h2>OUR FACILITIES</h2>
 
-                <div>
-                    <p>Premium Mats</p>
-                    <p>Climate Control</p>
-                    <p>Full Locker Room</p>
-                    <p>Shower Facilities</p>
-                    <p>Gear Storage</p>
-                    <p>Waiting Area</p>
+                <div className="facility-list">
+                    <div className="facility-item">Premium Mats</div>
+                    <div className="facility-item">Climate Control</div>
+                    <div className="facility-item">Full Locker Room</div>
+                    <div className="facility-item">Shower Facilities</div>
+                    <div className="facility-item">Gear Storae</div>
+                    <div className="facility-item">Waiting Area</div>
                 </div>
             </section>
         </main>
