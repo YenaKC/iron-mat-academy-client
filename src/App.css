@@ -142,7 +142,7 @@ footer {
   border-top: 1px solid var(--card-border);
 }
 
-.footer-contact {
+.footer-content {
   max-width: 900px;
   margin: 0 auto;
   display: grid;
