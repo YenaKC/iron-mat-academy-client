@@ -178,6 +178,7 @@ footer {
   width: 24px;
   height: 24px;
 }
+
 .footer-bottom {
   max-width: 900px;
   margin-top: 32px auto 0;
@@ -282,7 +283,7 @@ form {
   background-image: url("./assets/home-hero.png");
 
   position: relative;
-  
+
   min-height: 500px;
 
   background-size: cover;
@@ -298,14 +299,12 @@ form {
 /* darken overlay for hero */
 .hero::before {
   content: "";
-  
+
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    rgba(0, 0, 0, .65),
-    rgba(0, 0, 0, .45)
-  );
+  background: linear-gradient(rgba(0, 0, 0, .65),
+      rgba(0, 0, 0, .45));
 }
 
 .hero-content {
@@ -340,7 +339,7 @@ form {
 }
 
 /* home section buttons center */
-.card-grid > .home-button {
+.card-grid>.home-button {
   justify-self: center;
 }
 
@@ -458,9 +457,9 @@ form {
 
 /* ================= TECHNIQUES ================== */
 
-.techniques-grid {
-  display: grid;
-  gap: 16px;
+.technique-search {
+  max-width: 520px;
+  margin-bottom: 32px;
 }
 
 .technique-card {
@@ -469,11 +468,11 @@ form {
   border-radius: 8px;
   padding: 20px;
   transition: 0.2s ease;
-}
 
-.technique-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-actions {
@@ -481,6 +480,23 @@ form {
   flex-wrap: wrap;
   gap: 8px;
 }
+
+.card-actions a ,
+.card-actions button {
+  width: 90px;
+  text-align: center;
+}
+
+.techniques-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.technique-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
 
 /* ================ TECHNIQUE DETAIL ================= */
 

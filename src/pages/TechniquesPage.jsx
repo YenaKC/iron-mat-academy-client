@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import TechniqueCard from "../components/TechniqueCard";
 
-import { Link } from "react-router-dom";
-
 function TechniquesPage() {
     const [techniques, setTechniques] = useState([]);
 
@@ -48,6 +46,7 @@ function TechniquesPage() {
 
             {/* Input for searchbar */}
             <input
+                className="techniques-search"
                 type="text"
                 placeholder="Search techniques..."
                 value={searchTerm}
