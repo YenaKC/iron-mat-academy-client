@@ -1,3 +1,5 @@
+import aboutHero from "../assets/about-hero.png";
+
 function AboutPage() {
     return (
         <main>
@@ -7,11 +9,14 @@ function AboutPage() {
             </section>
 
             <section className="about-hero">
-                <div className="about-image-placeholder">
-                    TRAINING SPACE IMAGE
-                </div>
 
-                <div>
+                <img 
+                    src={aboutHero} 
+                    alt="Iron Mat Academy Training Facility" 
+                    className="about-hero-image"
+                />
+
+                <div className="mission-card">
                     <h2>MISSION STATEMENT</h2>
                     <p>
                         At Iron Mat Academy, we believe that Jiu-Jitsu is more than just a sport.
