@@ -33,7 +33,7 @@ function EditTechniquePage() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        constupdatedTechnique = {
+        const updatedTechnique = {
             name,
             category,
             position,
