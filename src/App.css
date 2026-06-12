@@ -309,6 +309,22 @@ form {
   color: var(--text-main);
 } 
 
+/* ================== CONTACT =================== */
+
+.contact-info {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.contact-form {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
 
 
 /* =================================================== */
@@ -403,6 +419,13 @@ form {
   /* CLASSES */
   .classes-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CONTACT */
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
 }
 
