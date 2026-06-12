@@ -28,7 +28,8 @@ body {
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 main {
@@ -219,7 +220,7 @@ form {
 
 /* ================= ABOUT ================== */
 
-.about.hero {
+.about-hero {
   display: grid;
   gap: 24px;
 }
