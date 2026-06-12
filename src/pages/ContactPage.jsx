@@ -16,7 +16,7 @@ function ContactPage() {
 
                 <div className="contact-form">
                     <h2>SEND US A MESSAGE</h2>
-                    
+
                     <form>
                         <input
                             type="text"
@@ -33,6 +33,15 @@ function ContactPage() {
                             Send Message
                         </button>
                     </form>
+                </div>
+
+                <div className="contact-map">
+                    <iframe
+                        title="Iron Mat Academy Location"
+                        src="https://www.google.com/maps?q=Carrer+Guitard+48+Barcelona&output=embed"
+                        loading="lazy"
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </section>
         </main>
